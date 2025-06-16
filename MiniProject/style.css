@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.recipe-card {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4a2c2a;
+}
+
+.dish-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.info {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #7b3f00;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #a65c1b;
+}
+
+.ingredients li,
+.steps li {
+  margin: 5px 0;
+  padding: 5px;
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.ingredients li:hover,
+.steps li:hover {
+  background-color: #ffe4c4;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 8px;
+  margin-top: 15px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #7b3f00;
+  transition: width 0.4s ease-in-out;
+}
+
+.step-control {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recipe-card {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
